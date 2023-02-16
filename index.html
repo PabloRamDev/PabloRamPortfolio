@@ -8,27 +8,26 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;0,700;1,600&display=swap"
     rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
+
   <meta name="viewport" content="width=device-width, minimum-scale=1.0" />
   <title>Pabloram.dev</title>
-  <script type="module" crossorigin src="/assets/index-a36b1d26.js"></script>
-  <link rel="stylesheet" href="/assets/index-167a6210.css">
+  <script type="module" crossorigin src="/assets/index-0ca803ea.js"></script>
+  <link rel="stylesheet" href="/assets/index-91c8f5ea.css">
 </head>
 
 <body>
   <header>
-    <a href="/">
+    <a href="/" id="home">
       <h1 class="header-logo">
         pabloram.dev
       </h1>
       
     </a>
     <nav id="nav">
-      <a href="#about_me_trigger">about</a>
-      <a href="#my_projects_trigger">my projects</a>
-      <a href="#contact">contact me</a>
+      <a href="#about_me_trigger" id="about_nav">about me</a>
+      <a href="#my_projects_trigger" id="my_projects_nav">my projects</a>
+      <a href="#contact" id="contact_nav">contact me</a>
+      <button id="language" data-emoji>🇬🇧</button>
 
     </nav>
   </header>
@@ -47,21 +46,20 @@
   <div class="about_me_trigger" id="about_me_trigger">
     <section class="about_me" id="about-me">
       <div class="about_me_text_wrapper" id="about_me_text_wrapper">
-        <h2>
+        <h2 id="about_me_title">
           About Me
         </h2>
         <p id="about_me_p1">
           I'm a freshly graduated <span class="fullstack">Full Stack Developer</span> looking for a new job.
           I live in Chile and i have 2 years of experience working in IT related fields (support), but web development
-          is
-          what i'm really into.
+          is what i'm really into.
 
 
           Express.js and Django (Django REST Framework) are the backend frameworks that i like and use to build fast and
           reliable apps.
 
 
-        <p id="about_me_p3">
+        <p id="about_me_p2">
           In relation to frontend development, i'm really comfortable working with React.js Next.js and CSS frameworks
           like bootstrap and tailwind. <br>
 
@@ -85,7 +83,7 @@
 
     <section class="project" id="project_intro" data-pin="true">
       <div class="project_title" id="project_intro_title">
-        <h2>My <span>projects</span></h2>
+        <h2 id="project_0_title">My <span>projects</span></h2>
         <div class="project_body"></div>
         <div class="project_description">
 
@@ -107,15 +105,13 @@
 
 
         <div class="project_description">
-          <p>
+          <p id="project1_p1">
             Web APP made with Django Rest Framework and a frontend made with React.Js and Material-Ui (MUI v5) component
             library.
           </p>
-          <p>
+          <p id="project1_p2">
             The main use of APP reservas DAE is to make reservations of the Multi-Purpose Sports Field of Inacap La
-            Serena, this can be done
-            inmediately by DAE Members using the scheluder, or by the students with an application form besides
-            invitations.
+            Serena.
           </p>
 
 
@@ -150,7 +146,7 @@
     <section class="project" id="project2" data-pin="true">
 
       <div class="project_title">
-        <h3>
+        <h3 id="project2_h3">
           <span>&#60;</span> CPA fixed Assets System <span>/&#62;</span>
         </h3>
       </div>
@@ -158,11 +154,11 @@
 
 
         <div class="project_description">
-          <p>
+          <p id="project2_p1">
             Web APP made with Django Rest Framework and a frontend made with React.Js and Material-Ui (MUI v5) component
             library.
           </p>
-          <p>
+          <p id="project2_p2">
             The main use of this App is to keep an active database of the fixed Assets of an institution, Inventory etc.
           </p>
 
@@ -190,7 +186,7 @@
     <section class="project" id="project3" data-pin="true">
 
       <div class="project_title">
-        <h3>
+        <h3 id="project3_h3">
           <span>&#60;</span> PABLORAM.DEV Portfolio <span>/&#62;</span>
         </h3>
       </div>
@@ -198,10 +194,10 @@
 
 
         <div class="project_description">
-          <p>
+          <p id="project3_p1">
             Well, This is the portfolio you're currently browsing, Made with Vanilla Js, HTML5 and CSS3.
           </p>
-          <p>
+          <p id="project3_p2">
             GSAP is the library used to make the scroll animations and a the little 3D Cube of my Stacks is made with
             THREE.Js
           </p>
@@ -237,8 +233,8 @@
 
   </div>
   <section class="contact" id="contact">
-    <h2>Contact <span>Me</span></h2>
-    <p>Here are the links of my social media and my Github</p>
+    <h2 id="contact_h2">Contact <span>Me</span></h2>
+    <p id="contact_p">If you liked my work, or you are hiring, feel free to contact me using any of the options below</p>
     <div class="cards_container">
 
 
@@ -246,7 +242,7 @@
         <a href="https://www.linkedin.com/in/pablo-ram%C3%ADrez-mart%C3%ADnez-2b5733254" target="_blank">
         <div class="link_wrapper">
             <img src="linkedin.png" alt="Linekin Logo" width="150">
-            <p>Connect on linkedin</p>
+            <p id="linkedin_p">Connect on LinkedIn</p>
         </div>
       </a>
    
@@ -256,7 +252,7 @@
           <a href="https://github.com/PabloRamDev" target="_blank">
             <div class="link_wrapper">
               <img src="github.png" alt="Github logo">
-              <p>Explore my Github</p>
+              <p id="github_p">Explore my Github</p>
           </div>
           </a>
         
@@ -269,7 +265,7 @@
         <a href="mailto:pabloram.dev@gmail.com" target="_blank">
         <div class="link_wrapper">
           <img src="mail.png" alt="Email logo" width="150">
-          <p>Send me an Email</p>
+          <p id="email_p">Send me an Email</p>
         </div>
       </a>
    
